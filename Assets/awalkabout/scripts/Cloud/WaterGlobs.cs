@@ -13,6 +13,7 @@ public class WaterGlobs : MonoBehaviour {
     public AudioSource audioManager;
     public AudioClip goodGlobClip;
     public float destructionTime = 3.0f;
+    public float gravityMultiplier = 0.3f;
 
 	// Use this for initialization
     void Start () {
@@ -33,4 +34,8 @@ public class WaterGlobs : MonoBehaviour {
     }
 
 
+    private void FixedUpdate()
+    {
+        this.gameObject.GetComponent<Rigidbody>().AddForce(Physics.gravity * gravityMultiplier);
+    }
 }

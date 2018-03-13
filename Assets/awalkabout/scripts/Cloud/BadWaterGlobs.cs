@@ -8,6 +8,7 @@ public class BadWaterGlobs : MonoBehaviour {
     public AudioSource audioManager;
     public AudioClip badGlobClip;
     public float destructionTime = 3.0f;
+    public float gravityMultiplier = 0.3f;
 
 	// Use this for initialization
 	void Start () {
@@ -26,5 +27,10 @@ public class BadWaterGlobs : MonoBehaviour {
             // then play the bad glob sound and inform the manager
             audioManager.PlayOneShot(badGlobClip);
         }
+    }
+
+    private void FixedUpdate()
+    {
+        this.gameObject.GetComponent<Rigidbody>().AddForce(Physics.gravity * gravityMultiplier);
     }
 }
