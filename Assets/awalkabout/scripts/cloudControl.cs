@@ -11,6 +11,8 @@ public class cloudControl : MonoBehaviour {
 	public List<Transform> destinies;
 	int currentDest;
 	public float nextCheckpointDist = 2.0f;
+	public Transform playerTransform;
+	public float maxPlayerDist = 2.0f;
 
 
 	// Use this for initialization
@@ -22,19 +24,29 @@ public class cloudControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		/*
 		if(Input.GetKeyDown (KeyCode.P)){
 			if(walking)
 				walking = false;
 			else
 				walking = true;
-
-			navAgent.isStopped = walking;
 		}
+		*/
 
 		if(Vector3.Distance(destinies[currentDest].position, myTransform.position) < nextCheckpointDist){
 			currentDest++;
 			if (currentDest >= destinies.Count)
 				currentDest = 0;
+			navAgent.SetDestination(destinies[currentDest].position);
 		}
+
+		if (Vector3.Distance (playerTransform.position, myTransform.position) >= maxPlayerDist) {
+			walking = false;
+		}
+		else{
+			walking = true;
+		}
+
+		navAgent.isStopped = !walking;
 	}
 }
