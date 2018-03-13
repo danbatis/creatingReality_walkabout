@@ -20,6 +20,7 @@ public class cloudControl : MonoBehaviour {
 		navAgent = GetComponent<NavMeshAgent>();	
 		navAgent.SetDestination(destinies[currentDest].position);
 		myTransform = transform;
+		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 	}
 	
 	// Update is called once per frame
