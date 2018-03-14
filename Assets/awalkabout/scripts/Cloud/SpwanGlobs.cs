@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpwanGlobs : MonoBehaviour {
 
@@ -18,12 +19,18 @@ public class SpwanGlobs : MonoBehaviour {
 	public float dclose = 0.3f;
 	public float dfar = 1.0f;
 	public float dropletSpeed = 0.5f;
+	Slider goodGlobRatioSlider;
 
 	// Use this for initialization
 	void Start () {
         StartCoroutine(InstantiateGlobs());
 		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 		myTransform = transform;
+		goodGlobRatioSlider =  GameObject.Find ("GUI/Panel/goodGlobRatio").GetComponent<Slider>();
+	}
+
+	void Update(){
+		ratioOfGoodToBadGlobs = goodGlobRatioSlider.value;
 	}
 
     IEnumerator InstantiateGlobs()
