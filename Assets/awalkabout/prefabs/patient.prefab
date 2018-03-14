@@ -72,6 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4144900757440380}
   - component: {fileID: 114422751801704698}
+  - component: {fileID: 114830770501158652}
   m_Layer: 0
   m_Name: Right
   m_TagString: Untagged
@@ -910,6 +911,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4121970266162376}
   - component: {fileID: 114779618081385768}
+  - component: {fileID: 114170379072730482}
   m_Layer: 0
   m_Name: Left
   m_TagString: Untagged
@@ -3113,6 +3115,19 @@ MonoBehaviour:
   m_additionalButtons: 0
   m_scrollType: 0
   m_scrollDeltaScale: {x: 1, y: -1}
+--- !u!114 &114170379072730482
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1694652836411456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa714c44502024d38b6687105fc34468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisController: L
+  TrainingManager: {fileID: 0}
 --- !u!114 &114174941641300136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3960,6 +3975,19 @@ MonoBehaviour:
     m_roleTypeFullName: HTC.UnityPlugin.Vive.HandRole
     m_roleValueName: LeftHand
     m_roleValueInt: 0
+--- !u!114 &114830770501158652
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1045352033371596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa714c44502024d38b6687105fc34468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisController: R
+  TrainingManager: {fileID: 0}
 --- !u!114 &114838424593499562
 MonoBehaviour:
   m_ObjectHideFlags: 1

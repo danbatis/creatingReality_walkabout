@@ -87,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 1083573891890172}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 2.2, z: 0}
-  m_LocalScale: {x: 0.762861, y: 0.76286095, z: 0.76286095}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 4858577903798366}
   m_Father: {fileID: 4252624317028332}
@@ -219,7 +219,7 @@ MonoBehaviour:
   spawnScale: {x: 1, y: 1, z: 1}
   directionPreference: 0.5
   directionVelocity: 0
-  yVelocity: 1
+  yVelocity: 0
 --- !u!114 &114838292159144810
 MonoBehaviour:
   m_ObjectHideFlags: 1
