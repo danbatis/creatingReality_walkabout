@@ -11,12 +11,19 @@ public class SpwanGlobs : MonoBehaviour {
     public float spawnSpeedMax = 5.0f;
     public Vector3 spawnScale = new Vector3(1.0f, 1.0f, 1.0f);
     public float directionPreference = 0.5f;
-    public float directionVelocity;
+    
     public float yVelocity = 1.0f;
+	Transform playerTransform;
+	Transform myTransform;
+	public float dclose = 0.3f;
+	public float dfar = 1.0f;
+	public float dropletSpeed = 0.5f;
 
 	// Use this for initialization
 	void Start () {
         StartCoroutine(InstantiateGlobs());
+		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+		myTransform = transform;
 	}
 
     IEnumerator InstantiateGlobs()
@@ -54,16 +61,22 @@ public class SpwanGlobs : MonoBehaviour {
     void SpeedAndSizeOfGlob(Rigidbody glob){
 
         glob.gameObject.transform.localScale = spawnScale;
-        float xVelocityDirection;
-        // Give the glob a direction based on how the patient is performing
-        if (directionPreference >= Random.Range(0.0f, 1.0f))
+
+		//in xz plane, we calculate direction
+		Vector3 dropletVel = Vector3.ProjectOnPlane (playerTransform.position - myTransform.position, Vector3.up);
+		if (directionPreference >= Random.Range(0.0f, 1.0f))
         {
-            xVelocityDirection = directionVelocity * 1.0f;
+			dropletVel += Random.Range (dclose, dfar) * playerTransform.right;
         }
         else
         {
-            xVelocityDirection = directionVelocity * -1.0f;
+			dropletVel += (-1)*Random.Range (dclose, dfar) * playerTransform.right;
         }
-        glob.velocity = new Vector3(xVelocityDirection, -1.0f * yVelocity, 0.0f);
+		//adjust speed
+		dropletVel = dropletSpeed*dropletVel.normalized;
+		//in y direction
+		dropletVel.y = -1.0f * yVelocity;
+
+		glob.velocity = dropletVel;
     }
 }

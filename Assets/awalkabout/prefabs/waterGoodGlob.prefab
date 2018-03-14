@@ -127,4 +127,4 @@ MonoBehaviour:
   audioManager: {fileID: 0}
   goodGlobClip: {fileID: 0}
   destructionTime: 3
-  gravityMultiplier: 0
+  gravityMultiplier: 0.05
