@@ -1,18 +1,18 @@
 fileFormatVersion: 2
-guid: fd0ded44b787eba418e0b04d8ac49dda
-timeCreated: 1520976412
+guid: 72d4991392928eb479a652ee6cb63200
+timeCreated: 1520976413
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: AppleTree_mesh
+    100002: BubingaTree_mesh
     400000: //RootNode
-    400002: AppleTree_mesh
-    2100000: AppleTree_mat
-    2300000: AppleTree_mesh
-    3300000: AppleTree_mesh
-    4300000: AppleTree_mesh
+    400002: BubingaTree_mesh
+    2100000: BubingaTree_mat
+    2300000: BubingaTree_mesh
+    3300000: BubingaTree_mesh
+    4300000: BubingaTree_mesh
   externalObjects: {}
   materials:
     importMaterials: 1

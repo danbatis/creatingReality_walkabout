@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4746596625625864}
   - component: {fileID: 33291691877704482}
-  - component: {fileID: 136664333934287420}
   - component: {fileID: 23653222599477476}
   - component: {fileID: 54839525988446962}
   - component: {fileID: 114576165287644138}
@@ -38,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1432901999353804}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7017157, y: 0.7017157, z: 0.7017157}
+  m_LocalPosition: {x: -0.315, y: 2.236, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -58,7 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5ddb1f4ce89696b449c7b6438bcbdc55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,7 +83,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1432901999353804}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: a6f9cae895e156947b0e0e2cdd5d5a06, type: 3}
 --- !u!54 &54839525988446962
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -116,16 +115,3 @@ MonoBehaviour:
   badGlobClip: {fileID: 0}
   destructionTime: 3
   gravityMultiplier: 0.1
---- !u!136 &136664333934287420
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1432901999353804}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
