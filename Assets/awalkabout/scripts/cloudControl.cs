@@ -16,6 +16,12 @@ public class cloudControl : MonoBehaviour {
 	public float maxPlayerDist = 2.0f;
 	Slider cloudSpeedSlider;
 
+	public float oscilFreq = 2.0f;
+	public float oscilAmp = 0.1f;
+	Transform cloudMesh;
+	Vector3 cloudPos;
+	float initialCloudHeight;
+
 	// Use this for initialization
 	void Start () {
 		navAgent = GetComponent<NavMeshAgent>();	
@@ -23,11 +29,16 @@ public class cloudControl : MonoBehaviour {
 		myTransform = transform;
 		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 		cloudSpeedSlider = GameObject.Find ("GUI/Panel/cloudSpeed").GetComponent<Slider>();
+		cloudMesh = GameObject.Find (gameObject.name+"/CloudSpawnner").transform;
+		cloudPos = cloudMesh.localPosition;
+		initialCloudHeight = cloudPos.y;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		navAgent.speed = cloudSpeedSlider.value;
+		cloudPos.y = initialCloudHeight + oscilAmp * Mathf.Sin(oscilFreq * Time.time);
+		cloudMesh.localPosition = cloudPos;
 
 		/*
 		if(Input.GetKeyDown (KeyCode.P)){
