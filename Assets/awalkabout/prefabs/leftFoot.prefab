@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33575112072485538}
   - component: {fileID: 23413536277129108}
   - component: {fileID: 95209190473971106}
+  - component: {fileID: 65036580238774432}
   m_Layer: 0
   m_Name: leftFoot
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1407950148417898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0020322578, y: -0.0025403225, z: 0}
-  m_LocalScale: {x: 19, y: 55, z: 10}
+  m_LocalScale: {x: 11, y: 30, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -83,6 +84,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1407950148417898}
   m_Mesh: {fileID: 4300000, guid: 5a8a00372bcd6480e8ff390ef8d8762c, type: 3}
+--- !u!65 &65036580238774432
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407950148417898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015512668, y: 0.010875767, z: 0.010663869}
+  m_Center: {x: -0.00030824772, y: 0.0004528195, z: -0.00012942008}
 --- !u!95 &95209190473971106
 Animator:
   serializedVersion: 3
