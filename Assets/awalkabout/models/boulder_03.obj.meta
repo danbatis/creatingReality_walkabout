@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 4a642b90780fb1e489dc7c8ecb3a5b37
-timeCreated: 1520976413
+guid: a01474b9c6725724991f92baca80fec2
+timeCreated: 1520999659
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -9,18 +9,20 @@ ModelImporter:
     100002: default
     400000: //RootNode
     400002: default
-    2100000: 455A64
-    2100002: 78909C
-    2100004: 8BC34A
     2300000: default
     3300000: default
     4300000: default
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: defaultMat
+    second: {fileID: 2100000, guid: 121f667d08ebeb449aab6f5ac06d4d74, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
