@@ -38,7 +38,7 @@ public class cloudControl : MonoBehaviour {
 		}
 		*/
 
-		if(Vector3.Distance(destinies[currentDest].position, myTransform.position) < nextCheckpointDist){
+		if(Vector3.ProjectOnPlane(destinies[currentDest].position - myTransform.position, Vector3.up).magnitude < nextCheckpointDist){
 			currentDest++;
 			if (currentDest >= destinies.Count)
 				currentDest = 0;
