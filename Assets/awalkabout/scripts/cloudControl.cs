@@ -49,6 +49,6 @@ public class cloudControl : MonoBehaviour {
 		}
 
 		navAgent.isStopped = !walking;
-		Debug.Log("<color=blue>player dist:"+Vector3.Distance(playerTransform.position, myTransform.position).ToString()+"</color>");
+		//Debug.Log("<color=blue>player dist:"+Vector3.Distance(playerTransform.position, myTransform.position).ToString()+"</color>");
 	}
 }

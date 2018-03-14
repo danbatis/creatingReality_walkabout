@@ -51,7 +51,7 @@ public class SpwanGlobs : MonoBehaviour {
         SpeedAndSizeOfGlob(badGlobInstance);
     }
 
-    void SpeedAndSizeOfGlob(Rigidbody glob) {
+    void SpeedAndSizeOfGlob(Rigidbody glob){
 
         glob.gameObject.transform.localScale = spawnScale;
         float xVelocityDirection;
