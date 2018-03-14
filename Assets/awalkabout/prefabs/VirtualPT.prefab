@@ -54,7 +54,9 @@ MonoBehaviour:
   goodGlobSound: {fileID: 8300000, guid: 0585b069c9209433c9daf94b919c160e, type: 3}
   badGlobSound: {fileID: 8300000, guid: d42dc8d24562f47fcac0868352daf545, type: 3}
   mushroomSquishSound: {fileID: 8300000, guid: 19e1b27c8f06e4380aa6728366d79be7, type: 3}
+  remoteObstacle: {fileID: 0}
   mountainFeedback: {fileID: 0}
+  UDPClient: {fileID: 0}
   goodGlobsCollected: 0
   badGlobsCollected: 0
   obstaclesCrushed: 0

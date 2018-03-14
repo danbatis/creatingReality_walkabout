@@ -10,7 +10,10 @@ public class VirtualPT : MonoBehaviour {
     public AudioClip badGlobSound;
     public AudioClip mushroomSquishSound;
 
+    public GameObject remoteObstacle;
+
     public GameObject mountainFeedback;
+    public GameObject UDPClient;
 
     public int goodGlobsCollected;
     public int badGlobsCollected;
@@ -26,6 +29,21 @@ public class VirtualPT : MonoBehaviour {
     void Start () {
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioSource>();
 	}
+
+    void Update() {
+        if (UDPClient != null)
+        {
+            if (UDPClient.GetComponent<UDPReceive>().MessageBool == true)
+            {
+                remoteObstacle.SetActive(true);
+            }
+            else
+            {
+
+                remoteObstacle.SetActive(false);
+            }
+        }
+    }
 
     public void GoodGlobCollected(string controller) {
 		Debug.Log ("collected good glob");
@@ -58,5 +76,16 @@ public class VirtualPT : MonoBehaviour {
 
     public void ObstacleEncountered() {
         audioManager.PlayOneShot(mushroomSquishSound);
+    }
+
+    public void AddObstacle() {
+        Debug.Log("Added obstacle");
+        remoteObstacle.SetActive(true);
+    }
+
+    public void RemoveObstacle()
+    {
+        Debug.Log("Remove obstacle");
+        remoteObstacle.SetActive(false);
     }
 }

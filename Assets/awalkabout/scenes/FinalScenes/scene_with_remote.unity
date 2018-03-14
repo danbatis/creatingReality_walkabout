@@ -7268,6 +7268,11 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: fd0ded44b787eba418e0b04d8ac49dda, type: 3}
   m_PrefabInternal: {fileID: 1297121721}
+--- !u!1 &1301599918 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1202370719069394, guid: 5eb1b7396b35d465e9e79307839a22bf,
+    type: 2}
+  m_PrefabInternal: {fileID: 965025200}
 --- !u!1 &1318513720
 GameObject:
   m_ObjectHideFlags: 0
@@ -10137,7 +10142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MessageBool: 0
-  VirtualPT: {fileID: 0}
+  secondObstacle: {fileID: 1301599918}
   port: 0
   lastReceivedUDPPacket: 
   allReceivedUDPPackets: 
@@ -10799,9 +10804,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114241967157500454, guid: 0f32220219754e54fb28c13e7f71bf34,
         type: 2}
+      propertyPath: remoteObstacle
+      value: 
+      objectReference: {fileID: 1301599918}
+    - target: {fileID: 114241967157500454, guid: 0f32220219754e54fb28c13e7f71bf34,
+        type: 2}
       propertyPath: mountainFeedback
       value: 
       objectReference: {fileID: 178581528}
+    - target: {fileID: 114241967157500454, guid: 0f32220219754e54fb28c13e7f71bf34,
+        type: 2}
+      propertyPath: UDPClient
+      value: 
+      objectReference: {fileID: 1844271837}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f32220219754e54fb28c13e7f71bf34, type: 2}
   m_IsPrefabParent: 0
