@@ -22,7 +22,7 @@ public class BadWaterGlobs : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "player") {
+        if (other.gameObject.tag == "player") {
             // If the player catches this water glob, 
             // then play the bad glob sound and inform the manager
             audioManager.PlayOneShot(badGlobClip);

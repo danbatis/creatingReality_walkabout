@@ -27,7 +27,7 @@ public class WaterGlobs : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "player") {
+        if (other.gameObject.tag == "player") {
             audioManager.PlayOneShot(goodGlobClip);
             goodGlobsCaught += 1;
         }
