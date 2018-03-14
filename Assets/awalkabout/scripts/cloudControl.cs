@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class cloudControl : MonoBehaviour {
 	
@@ -13,7 +14,7 @@ public class cloudControl : MonoBehaviour {
 	public float nextCheckpointDist = 2.0f;
 	public Transform playerTransform;
 	public float maxPlayerDist = 2.0f;
-
+	Slider cloudSpeedSlider;
 
 	// Use this for initialization
 	void Start () {
@@ -21,10 +22,13 @@ public class cloudControl : MonoBehaviour {
 		navAgent.SetDestination(destinies[currentDest].position);
 		myTransform = transform;
 		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+		cloudSpeedSlider = GameObject.Find ("GUI/Panel/cloudSpeed").GetComponent<Slider>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		navAgent.speed = cloudSpeedSlider.value;
+
 		/*
 		if(Input.GetKeyDown (KeyCode.P)){
 			if(walking)
