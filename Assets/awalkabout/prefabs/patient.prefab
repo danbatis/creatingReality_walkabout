@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 4144900757440380}
   - component: {fileID: 114422751801704698}
   - component: {fileID: 114830770501158652}
+  - component: {fileID: 65585257248399148}
   m_Layer: 0
   m_Name: Right
   m_TagString: Untagged
@@ -912,6 +913,7 @@ GameObject:
   - component: {fileID: 4121970266162376}
   - component: {fileID: 114779618081385768}
   - component: {fileID: 114170379072730482}
+  - component: {fileID: 65381718477367328}
   m_Layer: 0
   m_Name: Left
   m_TagString: Untagged
@@ -2370,6 +2372,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -2962,6 +2965,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65381718477367328
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1694652836411456}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.1, z: 0.3}
+  m_Center: {x: 0, y: 0, z: -0.06}
 --- !u!65 &65525946173131540
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2974,6 +2989,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.05, y: 0.03, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65585257248399148
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1045352033371596}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.1, z: 0.3}
+  m_Center: {x: 0, y: 0, z: -0.06}
 --- !u!114 &114020602241882202
 MonoBehaviour:
   m_ObjectHideFlags: 1
