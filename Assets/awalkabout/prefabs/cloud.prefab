@@ -196,7 +196,7 @@ BoxCollider:
   m_GameObject: {fileID: 1818151840204692}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 5.820321, y: 2.104042, z: 1.8476369}
   m_Center: {x: -0.10523999, y: 0.159801, z: 0.086936474}
@@ -211,15 +211,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dbaed966f03f480e99dc0ae0ed470af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goodGlob: {fileID: 54688164816515566, guid: d384876f3736c904faebaad8a533a7e7, type: 2}
-  badGlob: {fileID: 54839525988446962, guid: 1b30680dc9c96514c90724c711fa80f3, type: 2}
-  ratioOfGoodToBadGlobs: 0
-  spawnSpeedMin: 1
-  spawnSpeedMax: 5
+  goodGlob: {fileID: 1302333205679090, guid: d384876f3736c904faebaad8a533a7e7, type: 2}
+  badGlob: {fileID: 1432901999353804, guid: 1b30680dc9c96514c90724c711fa80f3, type: 2}
+  ratioOfGoodToBadGlobs: 0.7
+  spawnWaitTimeMin: 0
+  spawnWaitTimeMax: 0.01
   spawnScale: {x: 1, y: 1, z: 1}
   directionPreference: 0.5
-  directionVelocity: 0
-  yVelocity: 0
+  yVelocity: -0.25
+  dclose: 0.3
+  dfar: 1
+  dropletSpeed: 0.5
 --- !u!114 &114838292159144810
 MonoBehaviour:
   m_ObjectHideFlags: 1

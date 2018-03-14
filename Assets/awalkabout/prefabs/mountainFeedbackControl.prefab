@@ -51,11 +51,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e26c5b11f0abc4085aa285cb09e59d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flowersLayer1: []
-  flowersLayer2: []
-  flowersLayer3: []
-  flowersLayer4: []
-  flowersLayer5: []
-  flowersLayer6: []
-  flowersLayer7: []
+  flowersLayer1:
+  - {fileID: 0}
+  flowersLayer2:
+  - {fileID: 0}
+  flowersLayer3:
+  - {fileID: 0}
+  flowersLayer4:
+  - {fileID: 0}
+  flowersLayer5:
+  - {fileID: 0}
+  flowersLayer6:
+  - {fileID: 0}
+  flowersLayer7:
+  - {fileID: 0}
   growthDuration: 3
+  sizeOfPlants: 1

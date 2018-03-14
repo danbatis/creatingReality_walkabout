@@ -37,10 +37,13 @@ public class VirtualPT : MonoBehaviour {
         } else {
             leftControllerGlobs += 1;
         }
+
+        Debug.Log("Checking if we can make flowers grow");
         if (goodGlobsCollected % feedbackAfterNumberOfGlobsConnected == 0) {
             // then show the feedback on the mountains
             if (feedbackLayer < maxFeedbackLayer) {
                 feedbackLayer += 1;
+                Debug.Log("Make flowers grow");
                 mountainFeedback.GetComponent<FlowerBlossoms>().GrowFlowers(feedbackLayer);
             }
         }
