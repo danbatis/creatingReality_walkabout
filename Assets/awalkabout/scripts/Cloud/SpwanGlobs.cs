@@ -66,5 +66,4 @@ public class SpwanGlobs : MonoBehaviour {
         }
         glob.velocity = new Vector3(xVelocityDirection, -1.0f * yVelocity, 0.0f);
     }
-
 }
