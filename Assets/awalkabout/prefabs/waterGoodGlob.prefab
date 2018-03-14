@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4904758989623214}
   - component: {fileID: 33866836158686098}
   - component: {fileID: 23833022349741176}
-  - component: {fileID: 114771057903022088}
   - component: {fileID: 54688164816515566}
+  - component: {fileID: 114771057903022088}
   - component: {fileID: 65411551332832428}
   m_Layer: 0
   m_Name: waterGoodGlob
@@ -107,7 +107,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1302333205679090}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.21678014, y: 0.3114674, z: 0.21602201}

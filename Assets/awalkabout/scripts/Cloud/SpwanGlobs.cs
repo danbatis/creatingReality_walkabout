@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SpwanGlobs : MonoBehaviour {
 
-    public Rigidbody goodGlob;
-    public Rigidbody badGlob;
+    public GameObject goodGlob;
+    public GameObject badGlob;
     public float ratioOfGoodToBadGlobs;
-    public float spawnSpeedMin = 1.0f;
-    public float spawnSpeedMax = 5.0f;
+    public float spawnWaitTimeMin = 1.0f;
+    public float spawnWaitTimeMax = 5.0f;
     public Vector3 spawnScale = new Vector3(1.0f, 1.0f, 1.0f);
     public float directionPreference = 0.5f;
     
@@ -29,7 +29,7 @@ public class SpwanGlobs : MonoBehaviour {
     IEnumerator InstantiateGlobs()
     {
         // The globs should be spawned at random intervals
-        yield return new WaitForSeconds(Random.Range(spawnSpeedMin, spawnSpeedMax));
+		yield return new WaitForSeconds(Random.Range(spawnWaitTimeMin, spawnWaitTimeMax));
 
         // Set the initial position of the glob to be the position of the cloud, 
         // and spawn the glob from that point
@@ -47,20 +47,20 @@ public class SpwanGlobs : MonoBehaviour {
 
     void SpawnGoodGlob(Vector3 pos) {
         // Instantiate the rigidbody
-        Rigidbody goodGlobInstance = Instantiate(goodGlob, pos, Quaternion.identity);
+        GameObject goodGlobInstance = Instantiate(goodGlob, pos, Quaternion.identity);
         SpeedAndSizeOfGlob(goodGlobInstance);
     }
 
     void SpawnBadGlob(Vector3 pos)
     {
         // Instantiate the rigidbody
-        Rigidbody badGlobInstance = Instantiate(badGlob, pos, Quaternion.identity);
+        GameObject badGlobInstance = Instantiate(badGlob, pos, Quaternion.identity);
         SpeedAndSizeOfGlob(badGlobInstance);
     }
 
-    void SpeedAndSizeOfGlob(Rigidbody glob){
+    void SpeedAndSizeOfGlob(GameObject glob){
 
-        glob.gameObject.transform.localScale = spawnScale;
+        glob.transform.localScale = spawnScale;
 
 		//in xz plane, we calculate direction
 		Vector3 dropletVel = Vector3.ProjectOnPlane (playerTransform.position - myTransform.position, Vector3.up);
@@ -77,6 +77,6 @@ public class SpwanGlobs : MonoBehaviour {
 		//in y direction
 		dropletVel.y = -1.0f * yVelocity;
 
-		glob.velocity = dropletVel;
+		glob.GetComponent<Rigidbody>().velocity = dropletVel;
     }
 }
