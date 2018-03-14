@@ -22,6 +22,7 @@ public class VirtualPT : MonoBehaviour {
 	}
 
     public void GoodGlobCollected(string controller) {
+		Debug.Log ("collected good glob");
         goodGlobsCollected += 1;
         audioManager.PlayOneShot(goodGlobSound);
 
@@ -32,7 +33,8 @@ public class VirtualPT : MonoBehaviour {
         }
     }
 
-    public void BadGlobCollected(string controller) {
+	public void BadGlobCollected(string controller) {
+		Debug.Log ("collected bad glob");
         badGlobsCollected += 1;
         audioManager.PlayOneShot(badGlobSound);
     }

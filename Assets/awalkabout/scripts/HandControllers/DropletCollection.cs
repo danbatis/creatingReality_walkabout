@@ -13,6 +13,7 @@ public class DropletCollection : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+		Debug.Log ("Entered trigger on hand controller");
         if (other.tag == "goodGlob") {
             TrainingManager.GetComponent<VirtualPT>().GoodGlobCollected(thisController);
             Destroy(other.gameObject, 0.0f);
