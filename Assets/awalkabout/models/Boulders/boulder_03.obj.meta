@@ -1,18 +1,20 @@
 fileFormatVersion: 2
-guid: fd0ded44b787eba418e0b04d8ac49dda
-timeCreated: 1520976412
+guid: fb9f6ce6f23d4c942890ae5a4cb7fd17
+timeCreated: 1520976413
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: AppleTree_mesh
+    100002: default
     400000: //RootNode
-    400002: AppleTree_mesh
-    2100000: AppleTree_mat
-    2300000: AppleTree_mesh
-    3300000: AppleTree_mesh
-    4300000: AppleTree_mesh
+    400002: default
+    2100000: 455A64
+    2100002: 78909C
+    2100004: 8BC34A
+    2300000: default
+    3300000: default
+    4300000: default
   externalObjects: {}
   materials:
     importMaterials: 1

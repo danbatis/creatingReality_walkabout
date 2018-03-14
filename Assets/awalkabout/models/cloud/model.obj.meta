@@ -1,24 +1,33 @@
 fileFormatVersion: 2
-guid: fd0ded44b787eba418e0b04d8ac49dda
-timeCreated: 1520976412
+guid: 5cf49126c273f794bb2047f572063b74
+timeCreated: 1520982806
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: AppleTree_mesh
-    400000: //RootNode
-    400002: AppleTree_mesh
-    2100000: AppleTree_mat
-    2300000: AppleTree_mesh
-    3300000: AppleTree_mesh
-    4300000: AppleTree_mesh
-  externalObjects: {}
+    100000: mesh718487144
+    100002: //RootNode
+    400000: mesh718487144
+    400002: //RootNode
+    2300000: mesh718487144
+    3300000: mesh718487144
+    4300000: mesh718487144
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat21
+    second: {fileID: 2100000, guid: ef5ea3053003af54abe0666664d8a6db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat25
+    second: {fileID: 2100000, guid: f85cfe0df528b6240b82d3bc4283fb7d, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
