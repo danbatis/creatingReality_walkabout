@@ -12,12 +12,14 @@ public class FlowerBlossoms : MonoBehaviour {
     public GameObject[] flowersLayer7;
 
     public float growthDuration = 3.0f;
+    public float sizeOfPlants = 0.011f;
 
-    Vector3 finalSize = new Vector3(1.0f, 1.0f, 1.0f);
+    Vector3 finalSize = new Vector3(1.0f, 1.0f , 1.0f );
 
 	// Use this for initialization
 	void Start () {
-		
+
+        finalSize = new Vector3(sizeOfPlants, sizeOfPlants, sizeOfPlants);
 	}
 	
 	// Update is called once per frame
@@ -55,7 +57,7 @@ public class FlowerBlossoms : MonoBehaviour {
                 break;
         }
         foreach (GameObject flower in flowerLayer) {
-            flower.transform.localScale = Vector3.Lerp(flower.transform.localScale, finalSize, Time.deltaTime * growthDuration);
+            flower.transform.localScale = finalSize;
         }
     }
 }
