@@ -114,5 +114,5 @@ MonoBehaviour:
   spawnSpeedMax: 5
   spawnScale: {x: 0.3, y: 0.3, z: 0.3}
   directionPreference: 0.5
-  directionVelocity: 0
-  yVelocity: 0
+  directionVelocity: 1
+  yVelocity: 1
