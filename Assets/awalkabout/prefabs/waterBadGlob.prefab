@@ -115,7 +115,7 @@ MonoBehaviour:
   audioManager: {fileID: 0}
   badGlobClip: {fileID: 0}
   destructionTime: 3
-  gravityMultiplier: 0.1
+  gravityMultiplier: 0
 --- !u!136 &136664333934287420
 CapsuleCollider:
   m_ObjectHideFlags: 1
