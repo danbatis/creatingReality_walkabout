@@ -9,7 +9,7 @@ public class cloudControl : MonoBehaviour {
 	Transform myTransform;
 	bool walking;
 	public List<Transform> destinies;
-	int currentDest;
+	public int currentDest;
 	public float nextCheckpointDist = 2.0f;
 	public Transform playerTransform;
 	public float maxPlayerDist = 2.0f;
@@ -41,7 +41,7 @@ public class cloudControl : MonoBehaviour {
 			navAgent.SetDestination(destinies[currentDest].position);
 		}
 
-		if (Vector3.Distance (playerTransform.position, myTransform.position) >= maxPlayerDist) {
+		if (Vector3.ProjectOnPlane(playerTransform.position - myTransform.position, Vector3.up).magnitude >= maxPlayerDist) {
 			walking = false;
 		}
 		else{
@@ -49,5 +49,6 @@ public class cloudControl : MonoBehaviour {
 		}
 
 		navAgent.isStopped = !walking;
+		Debug.Log("<color=blue>player dist:"+Vector3.Distance(playerTransform.position, myTransform.position).ToString()+"</color>");
 	}
 }
