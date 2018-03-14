@@ -8234,6 +8234,34 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: f7bed6188f2e30e4694202920d127417, type: 3}
   m_PrefabInternal: {fileID: 1305870618}
+--- !u!1 &1322249381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1322249382}
+  m_Layer: 0
+  m_Name: destinyProxy (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1322249382
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1322249381}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.9, y: 0, z: -0.9}
+  m_LocalScale: {x: 0.32769173, y: 0.32769173, z: 0.32769173}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1324754647
 GameObject:
   m_ObjectHideFlags: 0
@@ -9242,6 +9270,34 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: f7bed6188f2e30e4694202920d127417, type: 3}
   m_PrefabInternal: {fileID: 1424701090}
+--- !u!1 &1433507859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1433507860}
+  m_Layer: 0
+  m_Name: destinyProxy (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1433507860
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1433507859}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.78, y: 0, z: 0.88}
+  m_LocalScale: {x: 0.32769173, y: 0.32769173, z: 0.32769173}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1437878983
 Prefab:
   m_ObjectHideFlags: 0
@@ -10048,6 +10104,34 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: f7bed6188f2e30e4694202920d127417, type: 3}
   m_PrefabInternal: {fileID: 1551215249}
+--- !u!1 &1571236905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1571236906}
+  m_Layer: 0
+  m_Name: destinyProxy (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1571236906
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1571236905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.061, y: 0, z: 0.88}
+  m_LocalScale: {x: 0.32769173, y: 0.32769173, z: 0.32769173}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1582776269
 Prefab:
   m_ObjectHideFlags: 0
