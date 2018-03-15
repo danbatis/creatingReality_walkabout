@@ -4,4 +4,19 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Tablet.unity
+    guid: c9940ca0b54194453b976170850e13e4
+  - enabled: 0
+    path: Assets/awalkabout/scenes/FinalScenes/Scene1.unity
+    guid: de4dbcef66f8549799dd57c24a907f18
+  - enabled: 1
+    path: Assets/awalkabout/scenes/FinalScenes/scene_with_remote.unity
+    guid: 14d98744f755a46e3ba75cafdcbd16a0
+  - enabled: 1
+    path: Assets/awalkabout/scenes/Scene2_v2.unity
+    guid: d3f23c9ac6d44b14285ed90d7b2873ad
+  - enabled: 1
+    path: Assets/awalkabout/scenes/Scene4.unity
+    guid: 116b75af7eed97448b301b5cf4c2c6f7
